@@ -1,0 +1,1 @@
+- add different config for different flavors and use exports field to get them out

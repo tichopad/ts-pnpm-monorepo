@@ -1,0 +1,5 @@
+[32m@tpm/utils:build: [0mcache hit, replaying output [2m3496b851094191c2[0m
+[32m@tpm/utils:build: [0m
+[32m@tpm/utils:build: [0m> @tpm/utils@1.0.0 build /home/michael/Projects/ts-pnpm-monorepo/packages/utils
+[32m@tpm/utils:build: [0m> tsc --noEmit
+[32m@tpm/utils:build: [0m

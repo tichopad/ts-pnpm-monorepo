@@ -1,0 +1,5 @@
+[33m@tpm/template:lint: [0mcache hit, replaying output [2m1c3b12efb1d5ef06[0m
+[33m@tpm/template:lint: [0m
+[33m@tpm/template:lint: [0m> @tpm/template@1.0.0 lint /home/michael/Projects/ts-pnpm-monorepo/packages/_template
+[33m@tpm/template:lint: [0m> eslint --fix --ext ts src
+[33m@tpm/template:lint: [0m

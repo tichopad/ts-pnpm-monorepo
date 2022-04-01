@@ -1,0 +1,8 @@
+[35m@tpm/utils:format: [0mcache hit, replaying output [2m4cbf9146207e505d[0m
+[35m@tpm/utils:format: [0m
+[35m@tpm/utils:format: [0m> @tpm/utils@1.0.0 format /home/michael/Projects/ts-pnpm-monorepo/packages/utils
+[35m@tpm/utils:format: [0m> prettier --write .
+[35m@tpm/utils:format: [0m
+[35m@tpm/utils:format: [0mpackage.json 55ms
+[35m@tpm/utils:format: [0msrc/index.ts 487ms
+[35m@tpm/utils:format: [0mtsconfig.json 8ms

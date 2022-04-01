@@ -1,0 +1,4 @@
+{
+  "extends": "@tpm/tsconfig/base",
+  "include": ["src"]
+}

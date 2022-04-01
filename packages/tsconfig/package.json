@@ -1,0 +1,7 @@
+{
+  "name": "@tpm/tsconfig",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "typescript": "4.6"
+  }
+}
