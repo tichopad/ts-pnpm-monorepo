@@ -1,5 +1,0 @@
-[35m@tpm/template:build: [0mcache hit, replaying output [2m9c883979b7005510[0m
-[35m@tpm/template:build: [0m
-[35m@tpm/template:build: [0m> @tpm/template@1.0.0 build /home/michael/Projects/ts-pnpm-monorepo/packages/_template
-[35m@tpm/template:build: [0m> tsc --noEmit
-[35m@tpm/template:build: [0m

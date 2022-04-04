@@ -5,16 +5,9 @@
     "build": {
       "dependsOn": ["^build"]
     },
-    "test": {
-      "dependsOn": ["^build"],
-      "outputs": []
-    },
     "lint": {
-      "dependsOn": ["format"],
       "outputs": []
     },
-    "format": {
-      "outputs": []
-    }
+    "format": {}
   }
 }

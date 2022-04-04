@@ -1,5 +1,0 @@
-[35m@tpm/utils:lint: [0mcache hit, replaying output [2m7c26eefa3e0edb1d[0m
-[35m@tpm/utils:lint: [0m
-[35m@tpm/utils:lint: [0m> @tpm/utils@1.0.0 lint /home/michael/Projects/ts-pnpm-monorepo/packages/utils
-[35m@tpm/utils:lint: [0m> eslint --fix --ext ts src
-[35m@tpm/utils:lint: [0m
