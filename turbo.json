@@ -6,8 +6,11 @@
       "dependsOn": ["^build"]
     },
     "lint": {
+      "dependsOn": ["format"],
       "outputs": []
     },
-    "format": {}
+    "format": {
+      "outputs": []
+    }
   }
 }
