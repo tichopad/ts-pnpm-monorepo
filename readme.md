@@ -1,7 +1,9 @@
 todo:
 
-- add tests
-- figure out tsconfig
-- add native, web, node app
-- add turborepo
+- ~~figure out tsconfig~~
+- ~~add web app~~
+- ~~add turborepo~~
 - refine eslint config
+- add react native app
+- add node app
+- add tests
