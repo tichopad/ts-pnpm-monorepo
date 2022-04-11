@@ -1,0 +1,25 @@
+{
+  "name": "@tpm/rest-api",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "TIMING=1 eslint --fix --ext ts src",
+    "build": "tsc",
+    "dev": "nodemon --watch src -e js,jsx,ts,tsx,json -x \"esmo src/main.ts\"",
+    "start": "node ./dist/main.js"
+  },
+  "eslintConfig": {
+    "extends": "@tpm/eslint-config"
+  },
+  "devDependencies": {
+    "@tpm/eslint-config": "workspace:*",
+    "@tpm/tsconfig": "workspace:*",
+    "@types/node": "^17.0.23",
+    "esmo": "^0.14.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "fastify": "^3.28.0"
+  }
+}

@@ -7,3 +7,4 @@ todo:
 - add react native app
 - add node app
 - add tests
+- rename master branch to "main"

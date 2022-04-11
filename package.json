@@ -6,8 +6,9 @@
     "turbo-filter-template": "Exclude the template package from pipeline runs"
   },
   "scripts": {
-    "build": "turbo run build --filter=!@tpm/template",
-    "lint": "turbo run lint --filter=!@tpm/template"
+    "dev": "turbo run dev",
+    "build": "turbo run build --filter=!@tpm/template --output-logs=new-only",
+    "lint": "turbo run lint --filter=!@tpm/template --output-logs=new-only"
   },
   "devDependencies": {
     "eslint": "8.12.0",
