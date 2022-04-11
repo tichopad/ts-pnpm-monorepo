@@ -10,7 +10,7 @@
     "lint": "eslint --fix --ext ts,tsx src"
   },
   "eslintConfig": {
-    "extends": "@tpm/eslint-config"
+    "extends": "@tpm/eslint-config/react"
   },
   "dependencies": {
     "react": "^17.0.2",

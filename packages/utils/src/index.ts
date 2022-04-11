@@ -1,4 +1,6 @@
-export function add(a: number, b: number): number {
+import type { A } from './types'
+
+export function add(a: number, b: number): A {
   return a + b
 }
 

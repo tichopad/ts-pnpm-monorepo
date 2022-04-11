@@ -3,11 +3,16 @@ const path = require('path')
 /** @type {import("eslint/lib/shared/types").ConfigData} */
 module.exports = {
   env: {
-    browser: true,
     es2021: true,
     node: true,
   },
-  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
+  extends: [
+    'airbnb-base',
+    'airbnb-typescript/base',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'prettier',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -20,6 +25,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': 'error',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': [
       'error',
