@@ -1,8 +1,8 @@
 {
   "name": "@tpm/utils",
+  "private": true,
   "version": "1.0.0",
   "main": "src/index.ts",
-  "private": true,
   "scripts": {
     "format": "prettier --write .",
     "lint": "TIMING=1 eslint --fix --ext ts src",
