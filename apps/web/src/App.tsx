@@ -1,4 +1,5 @@
 import type { ReactElement } from 'react'
+import { add } from '@tpm/utils'
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
@@ -14,6 +15,7 @@ function App(): ReactElement {
         <p>
           <button type="button" onClick={() => setCount((c) => c + 1)}>
             count is: {count}
+            count + 2 is: {String(add(count, 2))}
           </button>
         </p>
         <p>

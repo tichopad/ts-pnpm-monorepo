@@ -13,6 +13,7 @@
     "extends": "@tpm/eslint-config/react"
   },
   "dependencies": {
+    "@tpm/utils": "workspace:*",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },

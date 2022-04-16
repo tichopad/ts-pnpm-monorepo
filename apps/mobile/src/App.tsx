@@ -1,3 +1,4 @@
+import { add } from '@tpm/utils'
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
@@ -13,7 +14,9 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>
+        Open up App.tsx to start working on your app! {String(add(2, 2))}
+      </Text>
       <StatusBar style="auto" />
     </View>
   )
