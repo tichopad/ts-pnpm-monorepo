@@ -13,13 +13,13 @@
     "extends": "@tpm/eslint-config/react"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@tpm/eslint-config": "workspace:*",
     "@tpm/tsconfig": "workspace:*",
-    "@types/react": "^17.0.33",
+    "@types/react": "~17.0.21",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "typescript": "4.6",
