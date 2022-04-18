@@ -49,11 +49,13 @@ importers:
     specifiers:
       '@tpm/eslint-config': workspace:*
       '@tpm/tsconfig': workspace:*
+      '@tpm/utils': workspace:*
       '@types/node': ^17.0.23
       esmo: ^0.14.1
       fastify: ^3.28.0
       nodemon: ^2.0.15
     dependencies:
+      '@tpm/utils': link:../../packages/utils
       fastify: 3.28.0
     devDependencies:
       '@tpm/eslint-config': link:../../packages/eslint-config

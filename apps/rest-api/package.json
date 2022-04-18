@@ -6,7 +6,7 @@
     "format": "prettier --write .",
     "lint": "TIMING=1 eslint --fix --ext ts src",
     "build": "tsc",
-    "dev": "nodemon --watch src -e js,jsx,ts,tsx,json -x \"esmo src/main.ts\"",
+    "dev": "nodemon --watch src -e js,ts,json -x \"esmo src/main.ts\"",
     "start": "node ./dist/main.js"
   },
   "eslintConfig": {
@@ -20,6 +20,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "@tpm/utils": "workspace:*",
     "fastify": "^3.28.0"
   }
 }

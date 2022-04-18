@@ -1,3 +1,4 @@
+import { add } from '@tpm/utils'
 import createServer from 'fastify'
 
 const server = createServer({
@@ -5,7 +6,7 @@ const server = createServer({
 })
 
 server.get('/', async (request, reply) => {
-  await reply.send({ hello: 'world' })
+  await reply.send({ hello: `world ${add(2, 2)}` })
 })
 
 server.listen(3001, (err, address) => {
