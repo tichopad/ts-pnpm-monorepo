@@ -1,8 +1,8 @@
-import type { ReactElement } from 'react'
 import { add } from '@tpm/utils'
+import type { ReactElement } from 'react'
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import logo from './logo.svg'
 
 function App(): ReactElement {
   const [count, setCount] = useState(0)

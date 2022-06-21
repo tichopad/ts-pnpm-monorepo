@@ -5,7 +5,9 @@
   "main": "./base.js",
   "exports": {
     ".": "./base.js",
-    "./react": "./react.js"
+    "./base": "./base.js",
+    "./react": "./react.js",
+    "./typescript": "./typescript.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.17.0",
