@@ -9,7 +9,7 @@ server.get('/', async (request, reply) => {
   await reply.send({ hello: `world ${add(2, 2)}` })
 })
 
-server.listen(3001, (err, address) => {
+server.listen({ port: 3001 }, (err, address) => {
   if (err) {
     server.log.error(err)
     process.exit(1)
