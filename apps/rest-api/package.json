@@ -5,8 +5,8 @@
   "scripts": {
     "format": "prettier --write --cache .",
     "lint": "TIMING=1 eslint --fix --cache --ext ts src",
-    "build": "tsc --noEmit && rm -rf dist && esbuild src/main.ts --outdir=dist --bundle --minify --sourcemap --platform=node --target=node18",
-    "dev": "nodemon --watch src -e js,ts,json -x \"esmo src/main.ts\"",
+    "build": "tsc --noEmit && node ./build.js",
+    "dev": "wds --watch ./src/main.ts",
     "start": "node ./dist/main.js"
   },
   "eslintConfig": {
@@ -16,8 +16,7 @@
     "@tpm/eslint-config": "workspace:*",
     "@tpm/tsconfig": "workspace:*",
     "@types/node": "18.7.13",
-    "esmo": "0.16.3",
-    "nodemon": "2.0.19"
+    "wds": "^0.13.2"
   },
   "dependencies": {
     "@tpm/utils": "workspace:*",
