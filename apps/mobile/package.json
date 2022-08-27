@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "expo start -c",
-    "format": "prettier --write .",
+    "format": "prettier --write --cache .",
     "lint": "TIMING=1 eslint --fix --cache --ext ts,tsx src",
     "build": "tsc --noEmit",
     "android": "expo start --android",

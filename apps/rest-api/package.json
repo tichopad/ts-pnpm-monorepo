@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "format": "prettier --write .",
+    "format": "prettier --write --cache .",
     "lint": "TIMING=1 eslint --fix --cache --ext ts src",
     "build": "tsc --noEmit && rm -rf dist && esbuild src/main.ts --outdir=dist --bundle --minify --sourcemap --platform=node --target=node18",
     "dev": "nodemon --watch src -e js,ts,json -x \"esmo src/main.ts\"",
