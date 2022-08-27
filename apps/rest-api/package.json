@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "TIMING=1 eslint --fix --ext ts src",
-    "build": "tsc --noEmit && rm -rf dist && esbuild src/main.ts --outdir=dist --bundle --minify --sourcemap --platform=node --target=node16",
+    "lint": "TIMING=1 eslint --fix --cache --ext ts src",
+    "build": "tsc --noEmit && rm -rf dist && esbuild src/main.ts --outdir=dist --bundle --minify --sourcemap --platform=node --target=node18",
     "dev": "nodemon --watch src -e js,ts,json -x \"esmo src/main.ts\"",
     "start": "node ./dist/main.js"
   },
@@ -15,12 +15,12 @@
   "devDependencies": {
     "@tpm/eslint-config": "workspace:*",
     "@tpm/tsconfig": "workspace:*",
-    "@types/node": "^17.0.23",
-    "esmo": "^0.14.1",
-    "nodemon": "^2.0.15"
+    "@types/node": "18.7.13",
+    "esmo": "0.16.3",
+    "nodemon": "2.0.19"
   },
   "dependencies": {
     "@tpm/utils": "workspace:*",
-    "fastify": "^3.28.0"
+    "fastify": "4.5.3"
   }
 }
