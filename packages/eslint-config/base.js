@@ -6,6 +6,7 @@ module.exports = {
     node: true,
   },
   extends: ['airbnb-base', 'prettier'],
+  ignorePatterns: ['**/dist', '**/build'],
   rules: {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': [

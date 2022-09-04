@@ -6,7 +6,8 @@ const server = createServer({
 })
 
 server.get('/', async (request, reply) => {
-  await reply.send({ hello: `world ${add(2, 2)}` })
+  const { default: sayHello } = await import('./fns/hello')
+  await reply.send({ hello: `${sayHello()} --> ${add(2, 2)}` })
 })
 
 server.listen({ port: 3001 }, (err, address) => {
