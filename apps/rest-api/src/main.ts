@@ -1,18 +1,17 @@
-import { add } from '@tpm/utils'
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import createServer from 'fastify'
+import routes from './routes'
 
-const server = createServer({
+const app = createServer({
   logger: true,
 })
 
-server.get('/', async (request, reply) => {
-  const { default: sayHello } = await import('./fns/hello')
-  await reply.send({ hello: `${sayHello()} --> ${add(2, 2)}` })
-})
+app.register(routes)
 
-server.listen({ port: 3001 }, (err, address) => {
-  if (err) {
-    server.log.error(err)
+app.listen({ port: 3001 }).then(
+  () => {},
+  (error) => {
+    app.log.error(error)
     process.exit(1)
-  }
-})
+  },
+)

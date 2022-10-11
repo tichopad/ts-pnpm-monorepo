@@ -6,7 +6,7 @@
     "format": "prettier --write --cache .",
     "lint": "TIMING=1 eslint --fix --cache --ext ts src",
     "build": "tsc --noEmit && node ./build.js",
-    "dev": "wds --watch ./src/main.ts",
+    "dev": "tsx watch ./src/main.ts",
     "start": "node ./dist/main.js"
   },
   "eslintConfig": {
@@ -16,10 +16,14 @@
     "@tpm/eslint-config": "workspace:*",
     "@tpm/tsconfig": "workspace:*",
     "@types/node": "18.7.13",
-    "wds": "^0.13.2"
+    "tsx": "3.10.1"
   },
   "dependencies": {
+    "@fastify/type-provider-typebox": "2.3.0",
+    "@sinclair/typebox": "0.24.44",
     "@tpm/utils": "workspace:*",
-    "fastify": "4.5.3"
+    "fastify": "4.6.0",
+    "fastify-plugin": "4.2.1",
+    "nanoid": "4.0.0"
   }
 }

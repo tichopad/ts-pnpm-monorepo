@@ -1,6 +1,7 @@
 // @ts-check
 // esbuild is imported from root node_modules
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-console */
 
 const { rm } = require('fs/promises')
 const { build } = require('esbuild')
@@ -18,4 +19,7 @@ rm('./dist', { recursive: true, force: true })
       logLevel: 'info',
     }),
   )
-  .catch(() => process.exit(1))
+  .catch((error) => {
+    console.error(error)
+    process.exit(1)
+  })
