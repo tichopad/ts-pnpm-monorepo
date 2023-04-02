@@ -19,7 +19,7 @@ const shortenSchema = {
 const getShortenedUrlSchema = {
   params: Type.Object({
     shortenedUrlId: Type.String(),
-  })
+  }),
 }
 
 const routes: FastifyPluginAsync = async (app, options) => {
@@ -30,17 +30,23 @@ const routes: FastifyPluginAsync = async (app, options) => {
     .post('/shorten', { schema: shortenSchema }, async (request, reply) => {
       await reply.send({
         originalUrl: request.query.url,
-        shortenedUrl: await app.shortUrl.shorten(request.query.url)
+        shortenedUrl: await app.shortUrl.shorten(request.query.url),
       })
     })
-    .get('/s/:shortenedUrlId', { schema: getShortenedUrlSchema }, async (request, reply) => {
-      const originalUrl = app.shortUrl.shortenedMap.get(request.params.shortenedUrlId)
-      if (originalUrl === undefined) {
-        await reply.status(404).send()
-      } else {
-        await reply.redirect(307, originalUrl)
-      }
-    })
+    .get(
+      '/s/:shortenedUrlId',
+      { schema: getShortenedUrlSchema },
+      async (request, reply) => {
+        const originalUrl = app.shortUrl.shortenedMap.get(
+          request.params.shortenedUrlId,
+        )
+        if (originalUrl === undefined) {
+          await reply.status(404).send()
+        } else {
+          await reply.redirect(307, originalUrl)
+        }
+      },
+    )
 }
 
 export default fp(routes)

@@ -7,13 +7,16 @@
     },
     "lint": {
       "dependsOn": ["format"],
+      "inputs": ["**/*.{js,jsx,ts,tsx}"],
       "outputs": []
     },
     "format": {
+      "inputs": ["**/*.{js,jsx,ts,tsx}", "**/*.{json,md,yml,yaml}"],
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     }
   }
 }
