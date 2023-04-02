@@ -8,11 +8,15 @@ module.exports = {
   extends: ['airbnb-base', 'prettier'],
   ignorePatterns: ['**/dist', '**/build'],
   rules: {
+    'arrow-body-style': 'off',
     'import/extensions': 'off',
-    'import/no-extraneous-dependencies': [
+    'import/no-extraneous-dependencies': 'off',
+    'no-unused-vars': [
       'error',
       {
-        devDependencies: ['**/*.test.js', '**/vite.config.ts'],
+        args: 'none',
+        ignoreRestSiblings: false,
+        vars: 'all',
       },
     ],
   },
