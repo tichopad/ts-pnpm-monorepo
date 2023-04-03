@@ -1,5 +1,5 @@
 {
-  "$schema": "./tsconfig.schema.json",
+  "$schema": "https://json.schemastore.org/tsconfig.json",
   "extends": "./base.json",
   "compilerOptions": {
     "lib": ["ESNext"],
