@@ -27,6 +27,8 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/consistent-type-imports': 'error',
+    // Sometimes "any" is useful
+    '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
