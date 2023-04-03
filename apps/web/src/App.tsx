@@ -1,6 +1,5 @@
 import { add } from '@tpm/utils'
-import type { ReactElement } from 'react'
-import { useState } from 'react'
+import { type ReactElement, useState } from 'react'
 import './App.css'
 import logo from './logo.svg'
 

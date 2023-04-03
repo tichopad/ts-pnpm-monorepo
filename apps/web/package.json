@@ -10,7 +10,7 @@
     "lint": "eslint --fix --cache --ext ts,tsx src"
   },
   "eslintConfig": {
-    "extends": "@tpm/eslint-config/react"
+    "extends": "@tpm/eslint-config"
   },
   "dependencies": {
     "@tpm/utils": "workspace:*",

@@ -26,7 +26,14 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
-    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        disallowTypeAnnotations: true,
+        fixStyle: 'inline-type-imports',
+        prefer: 'type-imports',
+      }
+    ],
     // Sometimes "any" is useful
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -38,4 +45,22 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      // React
+      files: '**/*.tsx',
+      extends: [
+        'airbnb',
+        'airbnb-typescript',
+        'airbnb/hooks',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier',
+      ],
+      rules: {
+        // Using automatic JSX transform
+        'react/react-in-jsx-scope': 'off',
+      },
+    },
+  ],
 }
