@@ -1,5 +1,6 @@
 {
   "$schema": "./tsconfig.schema.json",
+  "files": ["./reset.d.ts"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
