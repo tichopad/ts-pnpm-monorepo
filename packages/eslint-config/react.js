@@ -13,6 +13,8 @@ module.exports = {
         'prettier',
       ],
       rules: {
+        // Sometimes "any" is useful
+        '@typescript-eslint/no-unsafe-assignment': 'off',
         // Using automatic JSX transform
         'react/react-in-jsx-scope': 'off',
       },

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "format": "prettier --write --cache .",
-    "lint": "TIMING=1 eslint --fix --cache --ext ts src",
+    "lint": "eslint --fix --cache --ext ts src",
     "build": "tsc --noEmit && node ./build.js",
     "dev": "tsx watch ./src/main.ts",
     "start": "node ./dist/main.js"
@@ -15,8 +15,8 @@
   "devDependencies": {
     "@tpm/eslint-config": "workspace:*",
     "@tpm/tsconfig": "workspace:*",
-    "@types/node": "18.7.13",
-    "tsx": "3.10.1"
+    "@types/node": "18.15.11",
+    "tsx": "3.12.6"
   },
   "dependencies": {
     "@fastify/type-provider-typebox": "2.3.0",

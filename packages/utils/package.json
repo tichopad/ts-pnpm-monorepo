@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "format": "prettier --write --cache .",
-    "lint": "TIMING=1 eslint --fix --cache --ext ts src",
+    "lint": "eslint --fix --cache --ext ts src",
     "build": "tsc --noEmit"
   },
   "eslintConfig": {
